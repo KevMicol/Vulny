@@ -1,0 +1,10 @@
+# -- stackhawk configuration for Kevins Vulny App --
+app:
+
+  applicationId: d1a6e11e-0a82-42f3-bba4-37e5aae30b55 # (required)
+  env: Production # (required)
+  host: http://localhost:3050 # (required)
+
+
+hawk:
+  failureThreshhold: high
