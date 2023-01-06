@@ -1,0 +1,14 @@
+version: 0.2
+
+env:
+  parameter-store:
+    HAWK_API_KEY: /hawk/api/key1
+
+phases:
+  build:
+    commands:
+      - |
+        docker run -v $(pwd):/hawk:rw -t \
+        -e API_KEY="${HAWK_API_KEY}" \
+        -e NO_COLOR=true \
+        stackhawk/hawkscan
