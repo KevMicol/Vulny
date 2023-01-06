@@ -12,13 +12,18 @@ phases:
     commands:
       - npm install
       
-      - npm run start &
+      
+
+      
+      - nohup npm run start & echo $! > pidfile
     
       - |
         docker run -v $(pwd):/hawk:rw -t \
         -e API_KEY="${HAWK_API_KEY}" \
         -e NO_COLOR=true \
         stackhawk/hawkscan
+        
+      - kill $(cat pidfile)
         
         
         
