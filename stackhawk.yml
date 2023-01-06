@@ -1,0 +1,9 @@
+app:
+  applicationId: xxXXXXXX-xXXX-xxXX-XXxX-xXXxxXXXXxXX
+  host: http://example.com
+  env: Development
+
+hawk:
+  startupTimeoutMinutes: 1
+  spider:
+    base: false
