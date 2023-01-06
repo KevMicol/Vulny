@@ -3,7 +3,4 @@ app:
   host: http://localhost:3000
   env: Pre-Production
 
-hawk:
-  startupTimeoutMinutes: 1
-  spider:
-    base: false
+
