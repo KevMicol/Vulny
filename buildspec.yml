@@ -5,10 +5,20 @@ env:
     HAWK_API_KEY: /hawk/api/key1
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 14.x
   build:
     commands:
+      - npm install
+      - npm test
+      - npm run start &
+    
       - |
         docker run -v $(pwd):/hawk:rw -t \
         -e API_KEY="${HAWK_API_KEY}" \
         -e NO_COLOR=true \
         stackhawk/hawkscan
+        
+        
+        
