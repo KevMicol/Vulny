@@ -1,6 +1,6 @@
 app:
   applicationId: 733de4cf-49b3-466d-bd08-76597e5ac87f
-  host: http://example.com
+  host: http://localhost:3000
   env: Pre-Production
 
 hawk:
