@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   parameter-store:
-    HAWK_API_KEY: /hawk/api/key1
+    HAWK_API_KEY: /CodeBuild/HAWK_API_KEY
 
 phases:
   install:
