@@ -4,6 +4,6 @@ app:
   env: Pre-Production
   
 hawk:
-  failureThreshhold: high
+  failureThreshold: high
 
 
