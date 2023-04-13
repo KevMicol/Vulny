@@ -2,5 +2,8 @@ app:
   applicationId: 3fef87ed-3385-429e-a5a6-4d88b0308d0a
   host: http://localhost:3000
   env: Pre-Production
+  
+hawk:
+  failureThreshhold: high
 
 
